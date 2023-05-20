@@ -31,7 +31,7 @@ numerical_features = [
        'price_usd', 'srch_length_of_stay', 'srch_booking_window',
        'srch_adults_count', 'srch_children_count', 'srch_room_count',
        'orig_destination_distance', 'perc_clicked',
-       'perc_booked', 'target', 'rating_relto_region', 'rating_relto_search',
+       'perc_booked', 'rating_relto_region', 'rating_relto_search',
        'review_relto_search', 'review_relto_region', 'price_per_night',
        'price_rel_to_region', 'price_rel_to_search', 'rel_distance',
        'prop_location_score', 'comb_rate', 'comb_inv']
@@ -39,7 +39,7 @@ numerical_features = [
     
 # INVESTIGATE OUTLIERS
 for feature_name in numerical_features:
-
+    print(feature_name)
     feature = data[feature_name]
     
     upper_value = np.percentile(feature,99)
